@@ -1,0 +1,25 @@
+{
+    "name": "bhl",
+    "displayName": "bhl",
+    "description": "BHL language support",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.32.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "bhl",
+            "aliases": ["BHL", "bhl"],
+            "extensions": [".bhl", ".conf.js"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "bhl",
+            "scopeName": "source.bhl",
+            "path": "./syntaxes/bhl.tmLanguage.json"
+        }]
+    }
+}
